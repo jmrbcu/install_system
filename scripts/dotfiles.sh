@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # bash dot files
 unalias ls &> /dev/null
 
