@@ -73,7 +73,9 @@ else
     if grep --quiet CentOS /etc/issue ; then
         sudo yum install zsh;
     elif grep --quiet Debian /etc/issue ; then
-        sudo aptitude install zsh;
+        sudo apt-get install zsh;
+    elif grep --quiet Ubuntu /etc/issue ; then
+        sudo apt-get install zsh;
     elif grep --quiet Arch /etc/issue ; then
         sudo pacman -S zsh;
     else
