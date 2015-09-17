@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # USAGE
 # ./run.sh OPTION
-
-
 
 if [ "$(uname)" == "Darwin" ]; then
     # SETTINGS

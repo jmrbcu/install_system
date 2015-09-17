@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # SETTINGS
 # General
 set -o nounset # Exit, with error message, when attempting to use an undefined variable.

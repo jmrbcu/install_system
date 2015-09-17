@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # iTerm
 install_zip_app "$ITERM_APP_URL" "$ITERM_APP_NAME"
 
