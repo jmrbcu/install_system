@@ -1,5 +1,11 @@
 # bash dot files
 unalias ls &> /dev/null
+
+if [ -L ~/.old_bash_config ] || [ -e ~/.old_bash_config ]; then 
+    echo "Backup directory: .old_bash_config exists, please, rename it..."
+    exit 1;
+fi
+
 mkdir ~/.old_bash_config
 
 # check  if the .dotfiles directory exists and if true, move it to the backup directory
