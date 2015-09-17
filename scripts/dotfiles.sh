@@ -16,7 +16,7 @@ mkdir ~/.old_bash_config
 git clone https://github.com/jmrbcu/dotfiles.git ~/.dotfiles
 for dotfile in `ls -A ~/.dotfiles/`; do
   # check  if the file exists and if true, move it to the backup directory
-  [ -L ~/$dotfile ] || [ -e ~/$dotfile  ] && mv $dotfile ~/.old_bash_config
+  [ -L ~/$dotfile ] || [ -e ~/$dotfile  ] && mv ~/$dotfile ~/.old_bash_config
 
   if [ $dotfile != ".git" ]; then
     ln -s ~/.dotfiles/$dotfile ~/$dotfile;
@@ -25,7 +25,7 @@ done
 
 # zsh configurations
 # check  if the .zprezto directory exists and if true, move it to the backup directory
-[ -L ~/.zprezto ] || [ -e ~/.zprezto  ] && mv .zprezto ~/.old_bash_config
+[ -L ~/.zprezto ] || [ -e ~/.zprezto  ] && mv ~/.zprezto ~/.old_bash_config
 
 git clone --recursive https://github.com/jmrbcu/prezto.git ~/.zprezto
 for rcfile in `ls -A ~/.zprezto/runcoms/z*`; do
