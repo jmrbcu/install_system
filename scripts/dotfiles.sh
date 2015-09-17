@@ -23,6 +23,9 @@ for dotfile in `ls -A ~/.dotfiles/`; do
   fi
 done
 
+# sanitize the .gitconfig for linux use
+sed -i.save 's/\[push\]//g;s/default = simple//g;s/^\s*$//g' ~/.gitconfig
+
 # zsh configurations
 # check  if the .zprezto directory exists and if true, move it to the backup directory
 [ -L ~/.zprezto ] || [ -e ~/.zprezto  ] && mv ~/.zprezto ~/.old_bash_config
