@@ -28,9 +28,9 @@ brew install --override-system-vi vim
 printf "\033[1;31mInstalling: \033[0;32meLinks\033[0m\n"
 brew install elinks
 
-# xz, rar and p7zip
+# xz, rar, unrar and p7zip
 printf "\033[1;31mInstalling: \033[0;32mxz, rar, p7zip\033[0m\n"
-brew install xz rar p7zip
+brew install xz rar unrar p7zip
 
 # bash completion
 printf "\033[1;31mInstalling: \033[0;32mbash completion\033[0m\n"
