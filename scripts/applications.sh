@@ -2,6 +2,8 @@
 
 # iTerm
 install_zip_app "$ITERM_APP_URL" "$ITERM_APP_NAME"
+# Install the Solarized Dark theme for iTerm
+open "./defaults/Mine.itermcolors"
 
 # App Cleaner
 install_zip_app "$APP_CLEANER_APP_URL" "$APP_CLEANER_APP_NAME"
@@ -12,6 +14,9 @@ defaults write com.hegenberg.BetterTouchTool launchOnStartup 1
 
 # Sublime Text
 install_dmg_app "$SUBLIME_TEXT_APP_URL" "Sublime Text" "$SUBLIME_TEXT_APP_NAME"
+# Install Sublime Text settings
+cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
 
 # Google Chrome
 install_dmg_app "$CHROME_APP_URL" "Google Chrome" "$CHROME_APP_NAME"
